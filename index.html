@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Farm Connect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>🌾 FarmConnect</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#farmers">Farmers</a></li>
+        <li><a href="#cart">Cart 🛒</a></li>
+    </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<section id="home" class="hero">
+    <h1>Connecting Farmers & Buyers</h1>
+    <p>Fresh • Organic • Direct from Farm</p>
+    <button onclick="scrollToProducts()">Explore Products</button>
+</section>
+
+<!-- SEARCH -->
+<section class="search">
+    <input type="text" id="searchBox" placeholder="Search farm products..." onkeyup="searchProduct()">
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="products">
+    <h2>Farm Products</h2>
+
+    <div class="product-grid" id="productList">
+        <!-- Product Cards -->
+    </div>
+</section>
+
+<!-- FARMERS -->
+<section id="farmers" class="farmers">
+    <h2>Our Farmers</h2>
+
+    <div class="farmer-card">
+        <h3>Ramesh Kumar</h3>
+        <p>Organic Vegetable Farmer</p>
+        <p>📍 Karnataka</p>
+    </div>
+
+    <div class="farmer-card">
+        <h3>Sita Devi</h3>
+        <p>Rice & Grain Farmer</p>
+        <p>📍 Andhra Pradesh</p>
+    </div>
+
+    <div class="farmer-card">
+        <h3>Mahesh Patil</h3>
+        <p>Fruit Farmer</p>
+        <p>📍 Maharashtra</p>
+    </div>
+</section>
+
+<!-- CART -->
+<section id="cart" class="cart">
+    <h2>Your Cart</h2>
+    <ul id="cartItems"></ul>
+    <h3 id="total">Total: ₹0</h3>
+    <button onclick="checkout()">Checkout</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Farm Connect | Empowering Farmers Digitally</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
